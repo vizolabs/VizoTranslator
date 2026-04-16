@@ -4,15 +4,13 @@
 
 ---
 
-## 💝 The Story Behind VizoTranslator
+## 💝 Why I Built This
 
-My dad runs a small business and daily deals with people from different countries. He'd always struggle with language barriers - whether it's chatting with suppliers, helping customers, or reading important documents in foreign languages.
+My dad needed fast translations for his daily work. No time to copy-paste into GPT or wait around.
 
-As a developer, I wanted to help him out. So I built **VizoTranslator** - a simple, fast, and reliable translation app that he could use right away on his Android phone.
+So I built **VizoTranslator** - one tap, instant translation. No subscriptions. No waiting. Just open and translate.
 
-No complex interfaces. No subscriptions. Just open the app, type or paste the text, and get an accurate AI-powered translation in seconds.
-
-**This app was made with love, for my dad. 🇮🇳**
+**Made for my dad. 🇮🇳**
 
 ---
 
