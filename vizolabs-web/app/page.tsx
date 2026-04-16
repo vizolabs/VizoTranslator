@@ -14,7 +14,19 @@ export default function HomePage() {
                 VizoTranslator
               </span>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-6">
+              <Link
+                href="/download"
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white flex items-center gap-1"
+              >
+                📱 Download App
+              </Link>
+              <Link
+                href="/pricing"
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              >
+                Pricing
+              </Link>
               <Link
                 href="/login"
                 className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
@@ -47,8 +59,11 @@ export default function HomePage() {
             <Link href="/register" className="btn-primary text-lg px-8 py-3">
               Start Translating Free
             </Link>
-            <Link href="/demo" className="btn-secondary text-lg px-8 py-3">
-              View Demo
+            <Link
+              href="/download"
+              className="btn-secondary text-lg px-8 py-3 flex items-center gap-2"
+            >
+              📱 Download App
             </Link>
           </div>
         </div>
@@ -200,6 +215,58 @@ export default function HomePage() {
                 'SLA guarantee',
               ]}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Mobile App Section */}
+      <section className="py-20 px-4 bg-gradient-to-r from-primary-600 to-primary-800">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                Translate on the Go
+              </h2>
+              <p className="text-xl text-primary-100 mb-8">
+                Download our mobile app for offline translations, camera translation, and more.
+                Available for Android now, iOS coming soon!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/download"
+                  className="inline-flex items-center gap-2 bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+                >
+                  📱 Download for Android
+                </Link>
+                <Link
+                  href="/download"
+                  className="inline-flex items-center gap-2 bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors"
+                >
+                  🍎 Coming Soon for iOS
+                </Link>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="w-64 h-[500px] bg-gray-900 rounded-[3rem] p-2 shadow-2xl">
+                  <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
+                    <div className="h-12 bg-primary-600 flex items-center justify-center">
+                      <span className="text-white font-bold">🌐 VizoTranslator</span>
+                    </div>
+                    <div className="p-4 space-y-4">
+                      <div className="bg-gray-100 rounded-lg p-3">
+                        <p className="text-sm text-gray-500">English</p>
+                        <p className="font-medium">Hello, how are you?</p>
+                      </div>
+                      <div className="bg-primary-100 rounded-lg p-3">
+                        <p className="text-sm text-primary-600">Spanish</p>
+                        <p className="font-medium">¡Hola, ¿cómo estás?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
