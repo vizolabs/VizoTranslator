@@ -4,17 +4,16 @@
 
 ## 📥 Download
 
-### Mobile & Desktop Apps
+### Android App (Available Now!)
 
-| Platform   | Status            | Release Date                             |
-| ---------- | ----------------- | ---------------------------------------- |
-| 🤖 Android | 🔨 In Development | Q2 2026                                  |
-| 🍎 iOS     | 🔨 In Development | Q2 2026                                  |
-| 🪟 Windows | 🔨 In Development | Q3 2026                                  |
-| 💻 macOS   | 🔨 In Development | Q3 2026                                  |
-| 🌐 Web App | ✅ Available      | [Launch App](https://vizotranslator.com) |
+📱 **Download APK**: [v1.0.0 - Click to Download](https://github.com/vizolabs/VizoTranslator/releases/download/v1.0.0/vizotranslator-android.apk)
 
-> **Note:** Mobile and desktop apps are coming soon! For now, use our web app.
+| Platform   | Status           | Download                                                                                                       |
+| ---------- | ---------------- | -------------------------------------------------------------------------------------------------------------- |
+| 🤖 Android | ✅ **Available** | [Download APK](https://github.com/vizolabs/VizoTranslator/releases/download/v1.0.0/vizotranslator-android.apk) |
+| 🌐 Web App | ✅ Available     | [Launch Web App](https://vizotranslator.com)                                                                   |
+
+> ⚠️ **iOS is NOT supported** - VizoTranslator is available for Android and Web only.
 
 ---
 
@@ -22,33 +21,41 @@
 
 - **AI-Powered Translation** - Advanced neural machine translation powered by Claude AI
 - **Multi-Language Support** - Translate between 50+ languages
-- **Real-time Translation** - Fast and accurate translations in milliseconds
-- **Batch Translation** - Translate multiple texts at once
-- **API Access** - RESTful API for seamless integration
-- **Translation Memory** - Learn and reuse past translations
-- **Team Collaboration** - Work together with shared glossaries
-- **Browser Extension** - Translate anywhere on the web
+- **Real-time Translation** - Fast and accurate translations
+- **Text-to-Speech** - Listen to translations
+- **Translation History** - Access past translations
+- **Offline History** - View saved translations offline
+- **API Access** - RESTful API for developers
+- **Browser Extension** - Translate on Chrome
+
+## Android App Features
+
+- 🌐 50+ Languages
+- 🤖 AI-Powered (Claude)
+- 🔊 Text-to-Speech
+- 📋 Copy to Clipboard
+- 📜 Translation History
+- 🔄 Language Swap
+- 📱 Works Offline (History)
 
 ## Tech Stack
 
 - **Backend**: Supabase, Node.js, Express
 - **AI**: Anthropic Claude API, OpenAI, Google Gemini
 - **Web**: Next.js, Tailwind CSS
+- **Mobile**: React Native, Expo
 - **Extensions**: Chrome, Firefox, VS Code
 - **SDK**: JavaScript/TypeScript
 
 ## Quick Start
 
-### 🌐 Web App (Available Now)
+### 🌐 Web App
 
-🚀 **Try it now**: [https://vizotranslator.com](https://vizotranslator.com)
+🚀 **Try online**: [https://vizotranslator.com](https://vizotranslator.com)
 
-### 📱 Mobile App (Coming Soon)
+### 📱 Android App
 
-Join our waitlist to get notified when apps are released:
-
-- [Android Waitlist](https://github.com/vizolabs/VizoTranslator/issues)
-- [iOS Waitlist](https://github.com/vizolabs/VizoTranslator/issues)
+📥 **Download APK**: [v1.0.0](https://github.com/vizolabs/VizoTranslator/releases/download/v1.0.0/vizotranslator-android.apk)
 
 ### 💻 Self-Hosted
 
@@ -70,7 +77,6 @@ npm run dev
 ### 🐳 Docker
 
 ```bash
-# Pull and run with Docker
 docker-compose up -d
 ```
 
@@ -80,9 +86,10 @@ docker-compose up -d
 VizoTranslator/
 ├── vizolabs-api/        # Express.js REST API
 ├── vizolabs-web/        # Next.js Web Application
+├── android-app/         # Android Mobile App (React Native/Expo)
 ├── vizolabs-sdk/        # JavaScript SDK
 ├── supabase/           # Database migrations & schema
-├── extensions/          # Browser extensions (Chrome, Firefox, VS Code)
+├── extensions/          # Browser extensions
 └── docs/              # Documentation
 ```
 
@@ -111,6 +118,7 @@ const result = await client.translate({
 ## Documentation
 
 - [API Documentation](https://github.com/vizolabs/VizoTranslator/blob/main/vizolabs-api/src/routes/openapi.yaml)
+- [Android App Guide](https://github.com/vizolabs/VizoTranslator/blob/main/android-app/README.md)
 - [Deployment Guide](https://github.com/vizolabs/VizoTranslator/blob/main/docs/DEPLOYMENT.md)
 - [Environment Variables](https://github.com/vizolabs/VizoTranslator/blob/main/docs/ENVIRONMENT.md)
 
