@@ -1,152 +1,161 @@
-# VizoTranslator
+# VizoTranslator 📱
 
-> AI-powered translation tool by VizoLabs
-
-## 📥 Download
-
-### Android App (Available Now!)
-
-📱 **Download APK**: [v1.0.0 - Click to Download](https://github.com/vizolabs/VizoTranslator/releases/download/v1.0.0/vizotranslator-android.apk)
-
-| Platform   | Status           | Download                                                                                                       |
-| ---------- | ---------------- | -------------------------------------------------------------------------------------------------------------- |
-| 🤖 Android | ✅ **Available** | [Download APK](https://github.com/vizolabs/VizoTranslator/releases/download/v1.0.0/vizotranslator-android.apk) |
-| 🌐 Web App | ✅ Available     | [Launch Web App](https://vizotranslator.com)                                                                   |
-
-> ⚠️ **iOS is NOT supported** - VizoTranslator is available for Android and Web only.
+> AI-Powered Translation App for Android
 
 ---
 
-## Features
+## 💝 The Story Behind VizoTranslator
 
-- **AI-Powered Translation** - Advanced neural machine translation powered by Claude AI
-- **Multi-Language Support** - Translate between 50+ languages
-- **Real-time Translation** - Fast and accurate translations
-- **Text-to-Speech** - Listen to translations
-- **Translation History** - Access past translations
-- **Offline History** - View saved translations offline
-- **API Access** - RESTful API for developers
-- **Browser Extension** - Translate on Chrome
+My dad runs a small business and daily deals with people from different countries. He'd always struggle with language barriers - whether it's chatting with suppliers, helping customers, or reading important documents in foreign languages.
 
-## Android App Features
+As a developer, I wanted to help him out. So I built **VizoTranslator** - a simple, fast, and reliable translation app that he could use right away on his Android phone.
 
-- 🌐 50+ Languages
-- 🤖 AI-Powered (Claude)
-- 🔊 Text-to-Speech
-- 📋 Copy to Clipboard
-- 📜 Translation History
-- 🔄 Language Swap
-- 📱 Works Offline (History)
+No complex interfaces. No subscriptions. Just open the app, type or paste the text, and get an accurate AI-powered translation in seconds.
 
-## Tech Stack
+**This app was made with love, for my dad. 🇮🇳**
 
-- **Backend**: Supabase, Node.js, Express
-- **AI**: Anthropic Claude API, OpenAI, Google Gemini
-- **Web**: Next.js, Tailwind CSS
-- **Mobile**: React Native, Expo
-- **Extensions**: Chrome, Firefox, VS Code
-- **SDK**: JavaScript/TypeScript
+---
 
-## Quick Start
+## 📥 Download
 
-### 🌐 Web App
+### Android App (Latest Version)
 
-🚀 **Try online**: [https://vizotranslator.com](https://vizotranslator.com)
+📱 **[Download APK - Click Here](https://github.com/vizolabs/VizoTranslator/releases/download/v1.0.0/vizotranslator-android.apk)**
 
-### 📱 Android App
+| Version | Size   | Date       |
+| ------- | ------ | ---------- |
+| v1.0.0  | ~25 MB | April 2026 |
 
-📥 **Download APK**: [v1.0.0](https://github.com/vizolabs/VizoTranslator/releases/download/v1.0.0/vizotranslator-android.apk)
+**Note:** This app is only available for **Android**. No iOS or Web version.
 
-### 💻 Self-Hosted
+---
+
+## ✨ Features
+
+- 🌐 **50+ Languages** - Translate between major world languages
+- 🤖 **AI-Powered** - Powered by Claude AI for accurate translations
+- ⚡ **Fast & Simple** - No complicated settings, just translate
+- 📜 **Translation History** - Access your recent translations
+- 🔊 **Text-to-Speech** - Listen to translations
+- 📋 **Copy to Clipboard** - Easy sharing
+- 🔄 **Swap Languages** - Quick language switching
+- 📱 **Works Offline** - View history without internet
+
+---
+
+## 🚀 Getting Started
+
+### Installation
+
+1. Download the APK from the link above
+2. Open the downloaded file
+3. If prompted, enable "Install from unknown sources" in Settings
+4. Tap "Install"
+5. Open VizoTranslator and start translating!
+
+### Usage
+
+1. **Select Languages** - Tap the top buttons to choose source and target languages
+2. **Enter Text** - Type or paste text in the input field
+3. **Translate** - Tap the "Translate" button
+4. **Listen/Copy** - Use the buttons to hear or copy the translation
+
+---
+
+## 📱 Supported Languages
+
+English, Spanish, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Korean, Arabic, Hindi, Dutch, Polish, Turkish, Vietnamese, Thai, Indonesian, Malay, and more!
+
+---
+
+## 🔧 Technical Details
+
+- **Platform**: Android (Native)
+- **Framework**: React Native + Expo
+- **AI**: Claude AI (Anthropic)
+- **Language**: TypeScript
+
+---
+
+## ⚠️ Important Notes
+
+- **Android Only** - This app is not available for iOS or web browsers
+- **Internet Required** - Translation requires internet connection (except viewing history)
+- **API Key Required** - For self-hosted version, you need a VizoTranslator API key
+
+---
+
+## 📂 Project Structure
+
+```
+VizoTranslator/
+├── android-app/           # React Native app
+│   ├── App.tsx          # Main app code
+│   ├── app.json         # Expo configuration
+│   ├── package.json     # Dependencies
+│   ├── eas.json         # Build configuration
+│   └── README.md        # App documentation
+├── CONTRIBUTING.md      # Contribution guidelines
+└── LICENSE              # MIT License
+```
+
+---
+
+## 🛠️ Build from Source
 
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/vizolabs/VizoTranslator.git
-cd VizoTranslator
+cd VizoTranslator/android-app
 
 # Install dependencies
 npm install
 
-# Configure environment variables
-cp vizolabs-api/.env.example vizolabs-api/.env
+# Start development
+npm start
 
-# Start the development server
-npm run dev
+# Build APK
+npx expo prebuild --platform android
+cd android && ./gradlew assembleRelease
 ```
 
-### 🐳 Docker
+---
 
-```bash
-docker-compose up -d
-```
+## 💡 Future Plans
 
-## Project Structure
+- 📷 Camera translation (scan text and translate)
+- 🎤 Voice input (speak instead of typing)
+- 📖 Offline translation pack
+- 🌐 More languages
 
-```
-VizoTranslator/
-├── vizolabs-api/        # Express.js REST API
-├── vizolabs-web/        # Next.js Web Application
-├── android-app/         # Android Mobile App (React Native/Expo)
-├── vizolabs-sdk/        # JavaScript SDK
-├── supabase/           # Database migrations & schema
-├── extensions/          # Browser extensions
-└── docs/              # Documentation
-```
+---
 
-## API Usage
+## 🤝 Contributing
 
-```bash
-curl -X POST https://api.vizotranslator.com/api/v1/translate/translate \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -d '{"text": "Hello", "source": "en", "target": "es"}'
-```
-
-### SDK
-
-```javascript
-import { VizoTranslator } from '@vizolabs/sdk'
-
-const client = new VizoTranslator('your-api-key')
-const result = await client.translate({
-  text: 'Hello',
-  source: 'en',
-  target: 'es',
-})
-```
-
-## Documentation
-
-- [API Documentation](https://github.com/vizolabs/VizoTranslator/blob/main/vizolabs-api/src/routes/openapi.yaml)
-- [Android App Guide](https://github.com/vizolabs/VizoTranslator/blob/main/android-app/README.md)
-- [Deployment Guide](https://github.com/vizolabs/VizoTranslator/blob/main/docs/DEPLOYMENT.md)
-- [Environment Variables](https://github.com/vizolabs/VizoTranslator/blob/main/docs/ENVIRONMENT.md)
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) first.
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
 5. Open a Pull Request
 
-## License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📧 Support
 
-## Support
-
-- **Issues**: https://github.com/vizolabs/VizoTranslator/issues
 - **Email**: vizolabsindia@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/vizolabs/VizoTranslator/issues)
 
-## Authors
+---
 
-**VixuxOG** - [GitHub](https://github.com/VixuxOG)
+## 📜 License
+
+This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 ---
 
 <p align="center">
-  Built with ❤️ by <a href="https://github.com/VixuxOG">VixuxOG</a> and <a href="https://github.com/vizolabs">VizoLabs</a>
+  Made with ❤️ for my dad<br>
+  <a href="https://github.com/vizolabs">VizoLabs</a>
 </p>

@@ -7,66 +7,42 @@ Thank you for your interest in contributing to VizoTranslator!
 ### Reporting Bugs
 
 1. Check if the bug has already been reported in [Issues](https://github.com/vizolabs/VizoTranslator/issues)
-2. If not, create a new issue with:
+2. Create a new issue with:
    - Clear title and description
    - Steps to reproduce
    - Expected vs actual behavior
-   - Screenshots if applicable
 
 ### Suggesting Features
 
 1. Search existing issues for similar suggestions
-2. Create a new issue with:
-   - Clear title and description
-   - Use case explanation
-   - Example implementation (optional)
+2. Create a new issue with your feature idea
 
 ### Pull Requests
 
 1. Fork the repository
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+2. Create a feature branch: `git checkout -b feature/your-feature`
 3. Make your changes
-4. Test your changes
-5. Commit with clear messages:
-   ```bash
-   git commit -m "Add: your feature description"
-   ```
-6. Push and create PR
+4. Commit: `git commit -m 'Add your feature'`
+5. Push: `git push origin feature/your-feature`
+6. Open a Pull Request
 
 ## Development Setup
 
 ```bash
-# Clone your fork
-git clone https://github.com/YOUR_USERNAME/VizoTranslator.git
-cd VizoTranslator
+# Install dependencies
+npm install
 
-# Add upstream remote
-git remote add upstream https://github.com/VixuxOG/VizoTranslator.git
+# Start Expo
+npm start
 
-# Create a feature branch
-git checkout -b feature/amazing-feature
-
-# Make changes and commit
-# ...
-
-# Fetch latest from upstream
-git fetch upstream
-
-# Rebase on main
-git rebase upstream/main
-
-# Push to your fork
-git push origin feature/amazing-feature
+# Run on Android
+npm run android
 ```
 
 ## Code Style
 
 - Use consistent formatting
-- Follow existing patterns in the codebase
-- Write meaningful commit messages
+- Write clear commit messages
 - Add comments for complex logic
 
 ## Questions?
