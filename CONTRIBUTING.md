@@ -6,7 +6,7 @@ Thank you for your interest in contributing to VizoTranslator!
 
 ### Reporting Bugs
 
-1. Check if the bug has already been reported in [Issues](https://github.com/VixuxOG/VizoTranslator/issues)
+1. Check if the bug has already been reported in [Issues](https://github.com/vizolabs/VizoTranslator/issues)
 2. If not, create a new issue with:
    - Clear title and description
    - Steps to reproduce
