@@ -1,18 +1,48 @@
 {
-  "name": "@vizotranslator/sdk",
+  "name": "@vizolabs/sdk",
   "version": "1.0.0",
   "description": "Official JavaScript/TypeScript SDK for VizoTranslator API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vizolabs/VizoTranslator",
+    "directory": "vizolabs-sdk/javascript"
+  },
+  "keywords": [
+    "translation",
+    "ai",
+    "claude",
+    "localization",
+    "i18n",
+    "api"
+  ],
+  "author": "VizoLabs <vizolabsindia@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "publish": "npm publish"
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts"
   },
   "dependencies": {
     "axios": "^1.7.0"
   },
   "devDependencies": {
+    "@types/node": "^22.5.0",
     "typescript": "^5.5.4",
-    "@types/node": "^22.5.0"
+    "vitest": "^2.0.5"
   }
 }
