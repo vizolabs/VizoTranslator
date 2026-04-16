@@ -4,17 +4,17 @@
 
 ## 📥 Download
 
-### Mobile App (Android)
+### Mobile & Desktop Apps
 
-[![Download APK](https://img.shields.io/badge/Download-APK-32CD32?style=for-the-badge&logo=android)](https://github.com/vizolabs/VizoTranslator/releases/latest/download/vizotranslator-android.apk)
-[![Latest Release](https://img.shields.io/github/v/release/vizolabs/VizoTranslator?style=for-the-badge)](https://github.com/vizolabs/VizoTranslator/releases/latest)
+| Platform   | Status            | Release Date                             |
+| ---------- | ----------------- | ---------------------------------------- |
+| 🤖 Android | 🔨 In Development | Q2 2026                                  |
+| 🍎 iOS     | 🔨 In Development | Q2 2026                                  |
+| 🪟 Windows | 🔨 In Development | Q3 2026                                  |
+| 💻 macOS   | 🔨 In Development | Q3 2026                                  |
+| 🌐 Web App | ✅ Available      | [Launch App](https://vizotranslator.com) |
 
-| Platform   | Status        | Download                                                                                                       |
-| ---------- | ------------- | -------------------------------------------------------------------------------------------------------------- |
-| 🤖 Android | **Available** | [Download APK](https://github.com/vizolabs/VizoTranslator/releases/latest/download/vizotranslator-android.apk) |
-| 🍎 iOS     | Coming Soon   | [Join Waitlist](https://github.com/vizolabs/VizoTranslator/releases)                                           |
-| 🪟 Windows | Coming Soon   | [Join Waitlist](https://github.com/vizolabs/VizoTranslator/releases)                                           |
-| 💻 macOS   | Coming Soon   | [Join Waitlist](https://github.com/vizolabs/VizoTranslator/releases)                                           |
+> **Note:** Mobile and desktop apps are coming soon! For now, use our web app.
 
 ---
 
@@ -28,28 +28,29 @@
 - **Translation Memory** - Learn and reuse past translations
 - **Team Collaboration** - Work together with shared glossaries
 - **Browser Extension** - Translate anywhere on the web
-- **Mobile App** - Translate on the go with offline support
 
 ## Tech Stack
 
 - **Backend**: Supabase, Node.js, Express
 - **AI**: Anthropic Claude API, OpenAI, Google Gemini
 - **Web**: Next.js, Tailwind CSS
-- **Mobile**: React Native
 - **Extensions**: Chrome, Firefox, VS Code
 - **SDK**: JavaScript/TypeScript
 
 ## Quick Start
 
-### Web App
+### 🌐 Web App (Available Now)
 
 🚀 **Try it now**: [https://vizotranslator.com](https://vizotranslator.com)
 
-### Mobile App
+### 📱 Mobile App (Coming Soon)
 
-📱 **Download Android APK**: [v1.0.0 (24.5 MB)](https://github.com/vizolabs/VizoTranslator/releases/latest/download/vizotranslator-android.apk)
+Join our waitlist to get notified when apps are released:
 
-### Self-Hosted
+- [Android Waitlist](https://github.com/vizolabs/VizoTranslator/issues)
+- [iOS Waitlist](https://github.com/vizolabs/VizoTranslator/issues)
+
+### 💻 Self-Hosted
 
 ```bash
 # Clone the repository
@@ -66,7 +67,7 @@ cp vizolabs-api/.env.example vizolabs-api/.env
 npm run dev
 ```
 
-### Docker
+### 🐳 Docker
 
 ```bash
 # Pull and run with Docker
@@ -131,10 +132,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: https://github.com/vizolabs/VizoTranslator/issues
 - **Email**: vizolabsindia@gmail.com
-
-## Releases
-
-📦 **Latest Release**: [v1.0.0](https://github.com/vizolabs/VizoTranslator/releases/latest)
 
 ## Authors
 
